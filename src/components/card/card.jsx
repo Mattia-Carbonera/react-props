@@ -1,6 +1,14 @@
+import "./card.css";
 import style from "./card.module.css";
 import Button from "../button/button";
 import defaultImage from "../../assets/img/card-image.png";
+
+function tagColor(tag, index) {
+  if (tag == "html") return "html";
+  if (tag == "css") return "css";
+  if (tag == "js") return "js";
+  if (tag == "php") return "php";
+}
 
 function Card({ id, title, image, content, tags, published }) {
   return (
@@ -15,10 +23,12 @@ function Card({ id, title, image, content, tags, published }) {
       <div className={style.description}>
         <h2>{title}</h2>
         <p>{content}</p>
-        {/* <span>{tags}</span> */}
-        {tags.forEach((tag) => {
-          console.log(tag);
-          return <span>{tag}</span>;
+        {tags.map((tag, index) => {
+          return (
+            <span className={tagColor(tag, index)} key={index}>
+              {tag}
+            </span>
+          );
         })}
         <div className="button">
           <Button />
