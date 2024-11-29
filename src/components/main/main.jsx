@@ -1,4 +1,6 @@
+import "./main.css";
 import Card from "../card/card";
+import Tags from "../tags/tags";
 import posts from "../../db/posts";
 
 function Main() {
@@ -6,6 +8,10 @@ function Main() {
 
   return (
     <main>
+      <div className="tags">
+        <Tags />
+      </div>
+
       {filteredPosts.map((post) => {
         return (
           <Card
