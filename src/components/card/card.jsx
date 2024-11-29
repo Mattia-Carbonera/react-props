@@ -1,7 +1,8 @@
 import "./card.css";
 import style from "./card.module.css";
 import Button from "../button/button";
-import defaultImage from "../../assets/img/card-image.png";
+// import defaultImage from "../../assets/img/card-image.png";
+const defaultImage = "https://picsum.photos/800";
 
 function tagColor(tag, index) {
   if (tag == "html") return "html";
