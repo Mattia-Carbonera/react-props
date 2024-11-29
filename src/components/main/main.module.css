@@ -1,0 +1,18 @@
+.card {
+  width: 40%;
+  margin: auto;
+  margin-top: 3rem;
+
+  border-radius: 10px;
+
+  box-shadow: 0 5px 20px gray;
+}
+
+.img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.description {
+  padding: 1rem;
+}
