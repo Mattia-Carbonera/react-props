@@ -11,14 +11,16 @@ function tagColor(tag, index) {
 function Tags() {
   const allTags = [];
   const htmlTags = [];
+  let index = 0;
 
   posts.forEach((post) => {
     const tags = post.tags;
-    tags.map((tag, index) => {
+    tags.map((tag) => {
       if (!allTags.includes(tag)) {
         allTags.push(tag);
+        index++;
         return htmlTags.push(
-          <span className={tagColor(tag, index)} key={index}>
+          <span className={tagColor(tag, index)} key={index - 1}>
             {tag}
           </span>
         );
