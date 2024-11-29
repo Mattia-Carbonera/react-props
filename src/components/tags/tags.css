@@ -29,3 +29,11 @@
   padding: 0.5rem;
   margin: 0.5rem;
 }
+
+.other {
+  background-color: lightgray;
+
+  display: inline-block;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}

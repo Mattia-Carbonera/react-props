@@ -6,6 +6,8 @@ function tagColor(tag, index) {
   if (tag == "css") return "css";
   if (tag == "js") return "js";
   if (tag == "php") return "php";
+  if (tag != "html" && tag != "css" && tag != "js" && tag != "php")
+    return "other";
 }
 
 function Tags() {

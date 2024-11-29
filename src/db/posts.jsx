@@ -14,7 +14,7 @@ const posts = [
     image: "",
     content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit animi unde quasi enim non esse ratione voluptas voluptate, officiis veritatis magni blanditiis possimus nobis cum id inventore corporis deserunt hic.",
-    tags: ["js", "css"],
+    tags: ["js", "css", "prova"],
     published: true,
   },
   {
