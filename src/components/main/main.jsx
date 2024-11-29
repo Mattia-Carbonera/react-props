@@ -1,6 +1,5 @@
 import Card from "../card/card";
 import posts from "../../db/posts";
-import defaultImage from "../../assets/img/card-image.png";
 
 function Main() {
   const filteredPosts = posts.filter((post) => post.published == true);
